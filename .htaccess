@@ -64,15 +64,8 @@ DirectoryIndex index.php index.html index.htm
   RewriteCond %{HTTP_HOST} ^www\.naranjatradicional\.es$
   RewriteRule ^(.*)$ "http\:\/\/www\.naranjatradicionaldegandia\.com\/$1" [R=301,L]
 
-  RewriteCond %{HTTP_HOST} ^naranjatradicionaldegandia.com$
-  RewriteRule ^(.*)$ "http\:\/\/www\.naranjatradicionaldegandia\.com\/$1" [R=301,L]
   
   
-RewriteCond %{HTTP_HOST} ^naranjatradicionaldegandia\.es$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.naranjatradicionaldegandia\.es$
-RewriteRule ^(.*)$ "http\:\/\/www\.naranjatradicionaldegandia\.com\/$1" [R=301,L]
-
-
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
@@ -167,3 +160,9 @@ order allow,deny
 deny from all
 </Files>
 </IfModule>
+
+                            
+RewriteCond %{HTTP_HOST} ^naranjatradicionaldegandia\.es$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.naranjatradicionaldegandia\.es$
+RewriteRule ^/?$ "http\:\/\/www\.naranjatradicionaldegandia\.com\/\$1" [R=301,L]
+
