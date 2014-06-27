@@ -63,6 +63,10 @@ DirectoryIndex index.php index.html index.htm
   RewriteCond %{HTTP_HOST} ^naranjatradicional\.es$ [OR]
   RewriteCond %{HTTP_HOST} ^www\.naranjatradicional\.es$
   RewriteRule ^(.*)$ "http\:\/\/www\.naranjatradicionaldegandia\.com\/$1" [R=301,L]
+  
+  RewriteCond %{HTTP_HOST} ^naranjatradicionaldegandia\.es$ [OR]
+  RewriteCond %{HTTP_HOST} ^www\.naranjatradicionaldegandia\.es$
+  RewriteRule ^(.*)$ "http\:\/\/www\.naranjatradicionaldegandia\.com\/$1" [R=301,L]
 
   
   
@@ -160,9 +164,4 @@ order allow,deny
 deny from all
 </Files>
 </IfModule>
-
-                            
-RewriteCond %{HTTP_HOST} ^naranjatradicionaldegandia\.es$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.naranjatradicionaldegandia\.es$
-RewriteRule ^/?$ "http\:\/\/www\.naranjatradicionaldegandia\.com\/\$1" [R=301,L]
 
