@@ -60,6 +60,7 @@ Disallow: /*?
 Disallow: /huertos/*
 Disallow: /compra-proveedor/*
 Disallow: /peso/*
+Disallow: /checkout/*
 
 # Paths (no clean URLs)
 Disallow: /?q=admin/
