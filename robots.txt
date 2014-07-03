@@ -55,12 +55,32 @@ Disallow: /user/*
 Disallow: /user
 Disallow: /cart
 Disallow: /cart/*
-Disallow: /noticias/mandarinas-satsuma-okitsu-novedad-2012-en-nuestro-catalogo
 Disallow: /*?
 Disallow: /huertos/*
 Disallow: /compra-proveedor/*
 Disallow: /peso/*
 Disallow: /checkout/*
+Disallow: /naranjasymandarinas/*
+
+# Paginas Borradas
+Disallow: /noticias/mandarinas-satsuma-okitsu-novedad-2012-en-nuestro-catalogo
+Disallow: /producto/caja-mandarina-clemenvilla-1kg-miel-artesanal
+Disallow: /producto/caja-mixta-naranja-10kg-mandarina-5kg-miel-1kg
+Disallow: /producto/caja-mixta-naranja-10kg-mandarina-fortune-5kg
+Disallow: /producto/caja-naranja-navel-lane-late-1kg-miel
+Disallow: /producto/caja-naranja-navelina-1kg-miel
+Disallow: /producto/caja-naranja-navelina-1kg-miel-artesanal
+Disallow: /producto/caja-naranja-navelina-zumo
+Disallow: /producto/caja-naranja-navelina-zumo-1kg-miel
+Disallow: /producto/mermelada-de-naranja-casera
+Disallow: /producto/tarro-miel-de-azahar-1kg
+Disallow: /ca/*
+Disallow: /newsletter/*
+Disallow: /pt-pt/*
+Disallow: /tipo-fruta/*
+Disallow: /articulos/*
+Disallow: /basic-page/*
+Disallow: /node/*
 
 # Paths (no clean URLs)
 Disallow: /?q=admin/
